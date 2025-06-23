@@ -19,7 +19,8 @@ export const AppRouter = () => {
       // protected routes
       const routeObject: RouteObject = {
         path: route.path,
-        element: isPrivate ? (
+        element: false ? (
+          // TODO descomentar: element: isPrivate ? (
           <ProtectedRoute>{route.element}</ProtectedRoute>
         ) : (
           <PublicRoute>{route.element}</PublicRoute>

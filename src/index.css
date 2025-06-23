@@ -4,6 +4,14 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+body {
+  @apply bg-white text-gray-800;
+}
+
+.dark body {
+  @apply bg-gray-800 text-white;
+}
+
 @theme {
   --color-primary-50: #eff6ff;
   --color-primary-100: #dbeafe;
